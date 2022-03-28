@@ -1,4 +1,4 @@
-# Autoways Now (API SIV) Documentation
+Autoways Now (API SIV) Documentation
 
 Grâce à notre service Web, votre site Internet ou vos applications permettront d’identifier les véhicules deux roues par l’intermédiaire de la plaque d’immatriculation. La plupart des boutiques en lignes de pièces détachées identifient les véhicules de leurs clients grâce au numéro de plaque d’immatriculation, cela permet d’éviter les erreurs d’identification, l’insatisfaction client et les retours de marchandise.
 
@@ -7,6 +7,8 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
 
  - **Plaque :** La plaque d’immatriculation du client en format, ‘FH-034-DD' ou 'FH034DD'.
 -   **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
+
+> Token de demo : **92cbc2ae3c8a30028d98b10872dd4c3a**
 
 ## Requête Javascript
 
@@ -77,7 +79,17 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
         "AWN_propulsion": "20804"
 	    }
     }
-    
+  
+## Test Live sur la plateforme  
+
+  
+Vous pouvez tester notre api en direct sur la plateforme AUTOWAYSNET en utilisant un compte DE démo, vous avez 20 requête de démo, vous pouvez utiliser les informations d'identification ci-dessous ou nous contacter pour un compte démo .
+
+ - URL : **[www.app.auto-ways.net](https://app.auto-ways.net/)**
+ - E-mail : **test@auto-ways.net**
+ - Mot de passe : **pass@test**
+
+> Parfois, nous désactivons ce compte pour des raisons de sécurité, si ce compte est désactivé, contactez-nous pour une démo.
 
 ## Contact
 
