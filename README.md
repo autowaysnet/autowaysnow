@@ -5,13 +5,12 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
 
 ## Paramètres API
 
- - **Plaque :** La plaque d’immatriculation du client en format, ‘FH-034-DD' ou 'FH034DD'.
--   **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
+- **Plaque :** La plaque d’immatriculation du client en format, ‘FH-034-DD' ou 'FH034DD'.
+- **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
 
 > Token de demo : **92cbc2ae3c8a30028d98b10872dd4c3a**
 
 ## Requête Javascript
-
 
     var plaque = 'FH-034-DD';
     var token = '92cbc2ae3c8a30028d98b10872dd4c3a';
@@ -91,6 +90,11 @@ Vous pouvez tester notre api en direct sur la plateforme AUTOWAYSNET en utilisan
  - Mot de passe : **pass@test**
 
 > Parfois, nous désactivons ce compte pour des raisons de sécurité, si ce compte est désactivé, contactez-nous pour une démo.
+
+
+## Abonnez-vous à l'API
+
+Pour souscrire à notre API de nombreuses solutions et forfaits sont disponibles contactez nous par mail ou page contact pour plus d'informations.
 
 ## Contact
 
