@@ -12,14 +12,15 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
 
 ## Requête Javascript
 
- > var plaque = 'FH-034-DD';**
-> var token = '3366fb9a97dc1aef3b094deea8dcda62';**
-> 
-> fetch (`https://app.auto-ways.net/autowayapi?plaque=${plaque}&token=${token}`)
-> 
-> .then((response) => response.json())
-> .then((result) => console.log(result))
-> .catch((error) => console.log('error', error));
+
+    var plaque = 'FH-034-DD';
+    var token = '92cbc2ae3c8a30028d98b10872dd4c3a';
+    
+    fetch (`https://app.auto-ways.net/autowayapi?plaque=${plaque}&token=${token}`)
+    .then((response) => response.json())
+    .then((result) => console.log(result))
+    .catch((error) => console.log('error', error));
+
 
 ## Requête sur  le navigateur :
 
