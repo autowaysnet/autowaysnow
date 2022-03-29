@@ -5,8 +5,8 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
 
 ## Paramètres API
 
-- **Plaque :** La plaque d’immatriculation du client en format, ‘FH-034-DD' ou 'FH034DD'.
-- **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
+ - **Plaque :** La plaque d’immatriculation du client en format, ‘FH-034-DD' ou 'FH034DD'.
+-   **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
 
 > Token de demo : **92cbc2ae3c8a30028d98b10872dd4c3a**
 
@@ -20,13 +20,15 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
     .then((result) => console.log(result))
     .catch((error) => console.log('error', error));
 
-
 ## Requête sur  le navigateur :
 
 [https://app.auto-ways.net/autowayapi?plaque=**FH-034-DD**&token=**92cbc2ae3c8a30028d98b10872dd4c3a**](https://app.auto-ways.net/autowayapi?plaque=FH-034-DD&token=92cbc2ae3c8a30028d98b10872dd4c3a)
 
 > N'oubliez pas de changer votre **plaque d'immatriculation** et votre **token**
 
+## Insomnia Requête exemple 
+
+![API SIV insomnia ](https://i.ibb.co/TRsgVf2/insomnia-HTTP-Request.png)
 ## Réponse API pour la plaque FH-034-DD :
 
     {
@@ -85,12 +87,13 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
   
 Vous pouvez tester notre api en direct sur la plateforme AUTOWAYSNET en utilisant un compte DE démo, vous avez 20 requête de démo, vous pouvez utiliser les informations d'identification ci-dessous ou nous contacter pour un compte démo .
 
- - URL : **[www.app.auto-ways.net](https://app.auto-ways.net/)**
- - E-mail : **test@auto-ways.net**
- - Mot de passe : **pass@test**
+![autowaysnow login page](https://i.ibb.co/C29fY9y/autowaysnow-login-page.png) 
+
+- URL : **[www.app.auto-ways.net](https://app.auto-ways.net/)**
+- E-mail : **test@auto-ways.net**
+- Mot de passe : **pass@test**
 
 > Parfois, nous désactivons ce compte pour des raisons de sécurité, si ce compte est désactivé, contactez-nous pour une démo.
-
 
 ## Abonnez-vous à l'API
 
@@ -99,6 +102,5 @@ Pour souscrire à notre API de nombreuses solutions et forfaits sont disponibles
 ## Contact
 
 Pour plus d'informations, n'hésitez pas à nous contacter  sur :
-
  - [contact@auto-ways.net](mailto:contact.auto-ways.net)
  - [Auto-ways.net](Auto-ways.net)
