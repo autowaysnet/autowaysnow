@@ -1,12 +1,22 @@
-# Autoways Now (API SIV) Documentation
+# AWN (API SIV) 
 
-Grâce à notre service Web, votre site Internet ou vos applications permettront d’identifier les véhicules deux roues par l’intermédiaire de la plaque d’immatriculation. La plupart des boutiques en lignes de pièces détachées identifient les véhicules de leurs clients grâce au numéro de plaque d’immatriculation, cela permet d’éviter les erreurs d’identification, l’insatisfaction client et les retours de marchandise.
+Grâce à notre service web, votre site web ou applications permettront d’identifier les véhicules par l’intermédiaire de la plaque d’immatriculation et qui remontée à des informations de plus de 50 champs concernant le véhicule. La plupart des boutiques en lignes de pièces détachées, cartes grises identifient les véhicules de leurs clients grâce au numéro de plaque d’immatriculation seulement, cela permet d’éviter les erreurs d’identification, l’insatisfaction client et les retours de marchandise.
 
+## Les bonnes raisons d’adopter l'API SIV
+
+- Identifiez et associez les informations techniques d’un véhicule en temps réel.
+- Un outil « clé en main » pour faciliter et améliorez votre qualité de service et faciliter l’acte d’achat de vos clients.
+- Augmentez votre productivité en fournissant les bonnes informations dans un délai immédiat.
+- Avoir une plateforme dédiée pour consulter les véhicules sans avoir besoin d’une API.
+- Disposez, si nécessaire, d’un service d’assistance du lundi au vendredi, pour vous guider dans l’utilisation du service SIV-API.
+- Un gage de fiabilité pour assurer la véracité des informations délivrées sur un véhicule.
+- Plus de 30 millions de véhicules à deux roues ont été recensés et directement identifiables.
+- Plus de 50 champs de données sont disponibles à partir d’une plaque d’immatriculation française SIV.
 
 ## Paramètres API
 
  - **Plaque :** La plaque d’immatriculation du client en format, ‘FH-034-DD' ou 'FH034DD'.
--   **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
+ - **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
 
 > Token de demo : **92cbc2ae3c8a30028d98b10872dd4c3a**
 
@@ -85,13 +95,15 @@ Grâce à notre service Web, votre site Internet ou vos applications permettront
 ## Test Live sur la plateforme  
 
   
-Vous pouvez tester notre api en direct sur la plateforme AUTOWAYSNET en utilisant un compte DE démo, vous avez 20 requête de démo, vous pouvez utiliser les informations d'identification ci-dessous ou nous contacter pour un compte démo .
-
-![autowaysnow login page](https://i.ibb.co/C29fY9y/autowaysnow-login-page.png) 
+Vous pouvez tester notre API gratuitement sans avoir coder sur la plateforme AUTOWAYSNET en utilisant un compte démo, vous pouvez utiliser les identifiants ci-dessous.
 
 - URL : **[www.app.auto-ways.net](https://app.auto-ways.net/)**
 - E-mail : **test@auto-ways.net**
 - Mot de passe : **pass@test**
+- 
+![autowaysnow login page](https://i.ibb.co/C29fY9y/autowaysnow-login-page.png) 
+
+![autowaysnow request page](https://i.ibb.co/xXLSZ8k/Screen-Shot-2022-04-04-at-7-57-54-PM.png) 
 
 > Parfois, nous désactivons ce compte pour des raisons de sécurité, si ce compte est désactivé, contactez-nous pour une démo.
 
