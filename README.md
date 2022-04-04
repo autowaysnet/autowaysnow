@@ -105,8 +105,6 @@ Vous pouvez tester notre API gratuitement sans avoir coder sur la plateforme AUT
 
 ![autowaysnow request page](https://i.ibb.co/xXLSZ8k/Screen-Shot-2022-04-04-at-7-57-54-PM.png) 
 
-> Parfois, nous désactivons ce compte pour des raisons de sécurité, si ce compte est désactivé, contactez-nous pour une démo.
-
 ## Abonnez-vous à l'API
 
 Pour souscrire à notre API de nombreuses solutions et forfaits sont disponibles contactez nous par mail ou page contact pour plus d'informations.
