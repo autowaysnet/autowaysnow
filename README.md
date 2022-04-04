@@ -109,4 +109,4 @@ Vous pouvez tester notre API gratuitement sans avoir coder sur la plateforme AUT
 
 Pour souscrire à notre API de nombreuses solutions et forfaits sont disponibles contactez nous par mail ou page contact pour plus d'informations.
  - [contact@auto-ways.net](mailto:contact.auto-ways.net)
- - [Auto-ways.net](Auto-ways.net)
+ - [Auto-ways.net](http://auto-ways.net/contact/)
