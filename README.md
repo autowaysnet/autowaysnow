@@ -89,7 +89,7 @@ Grâce à notre service web, votre site web ou applications permettront d’iden
         "AWN_poids_total_roulant": "1700",
         "AWN_prix": "20804",
         "AWN_propulsion": "20804"
-	    }
+	 }
     }
   
 ## Test Live sur la plateforme  
@@ -110,9 +110,5 @@ Vous pouvez tester notre API gratuitement sans avoir coder sur la plateforme AUT
 ## Abonnez-vous à l'API
 
 Pour souscrire à notre API de nombreuses solutions et forfaits sont disponibles contactez nous par mail ou page contact pour plus d'informations.
-
-## Contact
-
-Pour plus d'informations, n'hésitez pas à nous contacter  sur :
  - [contact@auto-ways.net](mailto:contact.auto-ways.net)
  - [Auto-ways.net](Auto-ways.net)
