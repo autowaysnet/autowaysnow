@@ -100,7 +100,7 @@ Vous pouvez tester notre API gratuitement sans avoir coder sur la plateforme AUT
 - URL : **[www.app.auto-ways.net](https://app.auto-ways.net/)**
 - E-mail : **test@auto-ways.net**
 - Mot de passe : **pass@test**
-- 
+
 ![autowaysnow login page](https://i.ibb.co/C29fY9y/autowaysnow-login-page.png) 
 
 ![autowaysnow request page](https://i.ibb.co/xXLSZ8k/Screen-Shot-2022-04-04-at-7-57-54-PM.png) 
