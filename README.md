@@ -1,112 +1,134 @@
-# AWN (API SIV) 
 
-Grâce à notre service web, votre site web ou applications permettront d’identifier les véhicules par l’intermédiaire de la plaque d’immatriculation et qui remontée à des informations de plus de 50 champs concernant le véhicule. La plupart des boutiques en lignes de pièces détachées, cartes grises identifient les véhicules de leurs clients grâce au numéro de plaque d’immatriculation seulement, cela permet d’éviter les erreurs d’identification, l’insatisfaction client et les retours de marchandise.
+# Getting Started with Auto-ways Network
 
-## Les bonnes raisons d’adopter l'API SIV
+## Introduction
 
-- Identifiez et associez les informations techniques d’un véhicule en temps réel.
-- Un outil « clé en main » pour faciliter et améliorez votre qualité de service et faciliter l’acte d’achat de vos clients.
-- Augmentez votre productivité en fournissant les bonnes informations dans un délai immédiat.
-- Avoir une plateforme dédiée pour consulter les véhicules sans avoir besoin d’une API.
-- Disposez, si nécessaire, d’un service d’assistance du lundi au vendredi, pour vous guider dans l’utilisation du service SIV-API.
-- Un gage de fiabilité pour assurer la véracité des informations délivrées sur un véhicule.
-- Plus de 30 millions de véhicules à deux roues ont été recensés et directement identifiables.
-- Plus de 50 champs de données sont disponibles à partir d’une plaque d’immatriculation française SIV.
+AWN le meilleur API SIV de recherche des plaques d’immatriculation française qui remontée des informations de plus de 50 champs concernant le véhicule, l’API est destinée pour les sites web, applications web de métier et applications mobile.
 
-## Paramètres API
+## Building
 
- - **Plaque :** La plaque d’immatriculation du client en format, ‘FH-034-DD' ou 'FH034DD'.
- - **Token :** Votre clé token vous sera livrée par e-mail après l'inscription.
+The generated code has dependencies over external libraries like UniRest. These dependencies are defined in the `composer.json` file that comes with the SDK. To resolve these dependencies, we use the Composer package manager which requires PHP greater than or equal to 7.2 installed in your system. Visit [https://getcomposer.org/download/](https://getcomposer.org/download/) to download the installer file for Composer and run it in your system. Open command prompt and type `composer --version`. This should display the current version of the Composer installed if the installation was successful.
 
-> Token de demo : **92cbc2ae3c8a30028d98b10872dd4c3a**
+* Using command line, navigate to the directory containing the generated files (including `composer.json`) for the SDK.
+* Run the command `composer install`. This should install all the required dependencies and create the `vendor` directory in your project directory.
 
-## Requête Javascript
+![Building SDK - Step 1](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=installDependencies)
 
-    var plaque = 'FH-034-DD';
-    var token = '92cbc2ae3c8a30028d98b10872dd4c3a';
-    
-    fetch (`https://app.auto-ways.net/autowayapi?plaque=${plaque}&token=${token}`)
-    .then((response) => response.json())
-    .then((result) => console.log(result))
-    .catch((error) => console.log('error', error));
+### Configuring CURL Certificate Path in php.ini
 
-## Requête sur  le navigateur :
+:information_source: **Note** This is for Windows users only.
 
-[https://app.auto-ways.net/autowayapi?plaque=**FH-034-DD**&token=**92cbc2ae3c8a30028d98b10872dd4c3a**](https://app.auto-ways.net/autowayapi?plaque=FH-034-DD&token=92cbc2ae3c8a30028d98b10872dd4c3a)
+CURL used to include a list of accepted CAs, but no longer bundles ANY CA certs. So by default it will reject all SSL certificates as unverifiable. You will have to get your CA's cert and point curl at it. The steps are as follows:
 
-> N'oubliez pas de changer votre **plaque d'immatriculation** et votre **token**
+1. Download the certificate bundle (.pem file) from [https://curl.haxx.se/docs/caextract.html](https://curl.haxx.se/docs/caextract.html) on to your system.
+2. Add curl.cainfo = "PATH_TO/cacert.pem" to your php.ini file located in your php installation. “PATH_TO” must be an absolute path containing the .pem file.
 
-## Insomnia Requête exemple 
+```
+[curl]; A default value for the CURLOPT_CAINFO option. This is required to be an
+; absolute path.
+curl.cainfo = PATH_TO/cacert.pem
+```
 
-![API SIV insomnia ](https://i.ibb.co/TRsgVf2/insomnia-HTTP-Request.png)
-## Réponse API pour la plaque FH-034-DD :
+## Installation
 
-    {
-    "data": {
-        "AWN_immat": "fh034dd",
-        "AWN_VIN": "VF1R9800962986572",
-        "AWN_marque": "RENAULT",
-        "AWN_modele": "CLIO",
-        "AWN_modele_etude": "CLIO IV",
-        "AWN_version": "DCI 90",
-        "AWN_type": "M10RENVP603P733",
-        "AWN_couleur": "GRIS",
-        "AWN_Hauteur": "145",
-        "AWN_largeur": "173",
-        "AWN_longueur": "406",
-        "AWN_marque_carrosserie": "RENAULT",
-        "AWN_poids_vide": "1160",
-        "AWN_puissance_chevaux": "90",
-        "AWN_puissance_fiscale": "5",
-        "AWN_carrosserie": "BERLINE",
-        "AWN_carrosserie_carte_grise": "CI",
-        "AWN_genre": "VP",
-        "AWN_genre_carte_grise": "VP",
-        "AWN_energie": "GAZOLE",
-        "AWN_energie_code": "GAZOLE",
-        "AWN_emission_co_2": "104",
-        "AWN_date_mise_en_circulation": "20-06-2019",
-        "AWN_numero_de_serie": "62986572",
-        "AWN_nbr_cylindres": "4",
-        "AWN_nbr_cylindre_energie": "1461",
-        "AWN_genre_code": "VP",
-        "AWN_collection": "non",
-        "AWN_puissance_KW": "66",
-        "AWN_code_moteur": "K9K_638",
-        "AWN_nbr_de_places": "5",
-        "AWN_nbr_soupapes": "0",
-        "AWN_nbr_volume": "2",
-        "AWN_nbr_portes": "5",
-        "AWN_nbr_vitesses": "5",
-        "AWN_Type_boite_vites": "MECANIQUE",
-        "AWN_Turbo_Comprressor": "TURBO",
-        "AWN_depollution": "OUI",
-        "AWN_empattement": "259",
-        "AWN_consommation_urbaine": "0.0",
-        "AWN_consommation_ex_urbaine": "0.0",
-        "AWN_consommation_mixte": "0.0",
-        "AWN_mode_injection": "AUTR. CARBURATIONS",
-        "AWN_poids_total_roulant": "1700",
-        "AWN_prix": "20804",
-        "AWN_propulsion": "20804"
-	 }
-    }
-  
-## Test Live sur la plateforme  
+The following section explains how to use the AutoWaysNetworkLib library in a new project.
 
-  
-Vous pouvez tester notre API gratuitement sans avoir coder sur la plateforme AUTOWAYSNET en utilisant un compte démo, vous pouvez utiliser les identifiants ci-dessous.
+### 1. Open Project in an IDE
 
-- URL : **[www.app.auto-ways.net](https://app.auto-ways.net/)**
-- E-mail : **test@auto-ways.net**
-- Mot de passe : **pass@test**
+Open an IDE for PHP like PhpStorm. The basic workflow presented here is also applicable if you prefer using a different editor or IDE.
 
-![autowaysnow login page](https://i.ibb.co/C29fY9y/autowaysnow-login-page.png) 
+![Open project in PHPStorm - Step 1](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=openIDE)
 
-![autowaysnow request page](https://i.ibb.co/xXLSZ8k/Screen-Shot-2022-04-04-at-7-57-54-PM.png) 
+Click on `Open` in PhpStorm to browse to your generated SDK directory and then click `OK`.
 
-## Abonnez-vous à l'API
+![Open project in PHPStorm - Step 2](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=openProject0)
 
-Pour souscrire à notre API de nombreuses solutions et forfaits sont disponibles contactez nous par mail ou page contact pour plus d'informations.
- - [contact@auto-ways.net](mailto:contact.auto-ways.net)
- - [Auto-ways.net](http://auto-ways.net/contact/)
+### 2. Add a new Test Project
+
+Create a new directory by right clicking on the solution name as shown below:
+
+![Add a new project in PHPStorm - Step 1](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=createDirectory)
+
+Name the directory as "test".
+
+![Add a new project in PHPStorm - Step 2](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=nameDirectory)
+
+Add a PHP file to this project.
+
+![Add a new project in PHPStorm - Step 3](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=createFile)
+
+Name it "testSDK".
+
+![Add a new project in PHPStorm - Step 4](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=nameFile)
+
+Depending on your project setup, you might need to include composer's autoloader in your PHP code to enable auto loading of classes.
+
+```php
+require_once "vendor/autoload.php";
+```
+
+It is important that the path inside require_once correctly points to the file `autoload.php` inside the vendor directory created during dependency installations.
+
+![Add a new project in PHPStorm - Step 5](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=projectFiles)
+
+After this you can add code to initialize the client library and acquire the instance of a Controller class. Sample code to initialize the client library and use the Controller methods is given in the subsequent sections.
+
+### 3. Run the Test Project
+
+To run your project you must set the Interpreter for your project. Interpreter is the PHP engine installed on your computer.
+
+Open `Settings` from `File` menu.
+
+![Run Test Project - Step 1](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=openSettings)
+
+Select `PHP` from within `Languages & Frameworks`.
+
+![Run Test Project - Step 2](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=setInterpreter0)
+
+Browse for Interpreters near the `Interpreter` option and choose your interpreter.
+
+![Run Test Project - Step 3](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=setInterpreter1)
+
+Once the interpreter is selected, click `OK`.
+
+![Run Test Project - Step 4](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=setInterpreter2)
+
+To run your project, right click on your PHP file inside your Test project and click on `Run`.
+
+![Run Test Project - Step 5](https://apidocs.io/illustration/php?workspaceFolder=AutoWaysNetwork&step=runProject)
+
+## Initialize the API Client
+
+**_Note:_** Documentation for the client can be found [here.](doc/client.md)
+
+The following parameters are configurable for the API Client:
+
+| Parameter | Type | Description |
+|  --- | --- | --- |
+| `timeout` | `int` | Timeout for API calls in seconds.<br>*Default*: `0` |
+| `enableRetries` | `bool` | Whether to enable retries and backoff feature.<br>*Default*: `false` |
+| `numberOfRetries` | `int` | The number of retries to make.<br>*Default*: `0` |
+| `retryInterval` | `float` | The retry time interval between the endpoint calls.<br>*Default*: `1` |
+| `backOffFactor` | `float` | Exponential backoff factor to increase interval between retries.<br>*Default*: `2` |
+| `maximumRetryWaitTime` | `int` | The maximum wait time in seconds for overall retrying requests.<br>*Default*: `0` |
+| `retryOnTimeout` | `bool` | Whether to retry on request timeout.<br>*Default*: `true` |
+| `httpStatusCodesToRetry` | `array` | Http status codes to retry against.<br>*Default*: `408, 413, 429, 500, 502, 503, 504, 521, 522, 524` |
+| `httpMethodsToRetry` | `array` | Http methods to retry against.<br>*Default*: `'GET', 'PUT'` |
+
+The API client can be initialized as follows:
+
+```php
+$client = new AutoWaysNetworkLib\AutoWaysNetworkClient([
+]);
+```
+
+## List of APIs
+
+* [API](doc/controllers/api.md)
+
+## Classes Documentation
+
+* [ApiException](doc/api-exception.md)
+* [HttpRequest](doc/http-request.md)
+* [HttpResponse](doc/http-response.md)
+

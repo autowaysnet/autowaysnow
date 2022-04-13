@@ -1,0 +1,41 @@
+{
+    "name": "apimatic/autowaysnetwork",
+    "description": "AWN le meilleur API SIV de recherche des plaques d’immatriculation française qui remontée des informations de plus de 50 champs concernant le véhicule, l’API est destinée pour les sites web, applications web de métier et applications mobile.",
+    "type": "library",
+    "keywords": [
+        "Auto-ways Network",
+        "API",
+        "SDK"
+    ],
+    "homepage": "https://auto-ways.net/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Auto-ways Network",
+            "email": "contact@auto-ways.net",
+            "homepage": "https://auto-ways.net/"
+        }
+    ],
+    "require": {
+        "php": ">=7.2 <8.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "apimatic/unirest-php": "^2.2.2",
+        "apimatic/jsonmapper": "^3.0.0"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.5",
+        "phan/phan": "5.3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "AutoWaysNetworkLib\\": "src/"
+        }
+    },
+    "scripts": {
+        "lint": "phpcs --standard=phpcs-ruleset.xml src/",
+        "lint-fix": "phpcbf --standard=phpcs-ruleset.xml src/",
+        "analyze": "phan --allow-polyfill-parser"
+    }
+}
