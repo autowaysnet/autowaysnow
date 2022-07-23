@@ -36,7 +36,7 @@
         "parameters" : [ {
           "name" : "token",
           "in" : "query",
-          "description" : "your token ",
+          "description" : "Your token, use your real token or request a free token for fee here https://auto-ways.net/demo ",
           "required" : true,
           "style" : "form",
           "explode" : true,
@@ -47,7 +47,7 @@
         }, {
           "name" : "vin",
           "in" : "query",
-          "description" : "car VIN",
+          "description" : " Your VIN (Vehicle Identification Number)",
           "required" : true,
           "style" : "form",
           "explode" : true,
@@ -58,7 +58,7 @@
         }, {
           "name" : "output_lang",
           "in" : "query",
-          "description" : "output language (fr,en)",
+          "description" : "Define the API output language (fr,en)",
           "required" : false,
           "style" : "form",
           "explode" : true,
@@ -154,7 +154,7 @@
         "parameters" : [ {
           "name" : "token",
           "in" : "query",
-          "description" : "your token ",
+          "description" : "Your token, use your real token or request a free token for fee here https://auto-ways.net/demo ",
           "required" : true,
           "style" : "form",
           "explode" : true,
@@ -176,7 +176,7 @@
         }, {
           "name" : "output_lang",
           "in" : "query",
-          "description" : "output language (fr,en)",
+          "description" : "Define the API output language (fr,en)",
           "required" : false,
           "style" : "form",
           "explode" : true,
@@ -272,7 +272,7 @@
         "parameters" : [ {
           "name" : "token",
           "in" : "query",
-          "description" : "your token ",
+          "description" : "Your token, use your real token or request a free token for fee here https://auto-ways.net/demo ",
           "required" : true,
           "style" : "form",
           "explode" : true,
@@ -294,7 +294,7 @@
         }, {
           "name" : "output_lang",
           "in" : "query",
-          "description" : "output language (fr,en)",
+          "description" : "Define the API output language (fr,en)",
           "required" : false,
           "style" : "form",
           "explode" : true,
@@ -374,7 +374,7 @@
         "parameters" : [ {
           "name" : "token",
           "in" : "query",
-          "description" : "your token ",
+          "description" : "Your token, use your real token or request a free token for fee here https://auto-ways.net/demo ",
           "required" : true,
           "style" : "form",
           "explode" : true,
@@ -396,7 +396,7 @@
         }, {
           "name" : "output_lang",
           "in" : "query",
-          "description" : "output language (fr,en)",
+          "description" : "Define the API output language (fr,en)",
           "required" : false,
           "style" : "form",
           "explode" : true,
@@ -489,7 +489,7 @@
         "parameters" : [ {
           "name" : "token",
           "in" : "query",
-          "description" : "your token ",
+          "description" : "Your token, use your real token or request a free token for fee here https://auto-ways.net/demo ",
           "required" : true,
           "style" : "form",
           "explode" : true,
@@ -511,7 +511,7 @@
         }, {
           "name" : "output_lang",
           "in" : "query",
-          "description" : "output language (fr,en)",
+          "description" : "Define the API output language (fr,en)",
           "required" : false,
           "style" : "form",
           "explode" : true,
