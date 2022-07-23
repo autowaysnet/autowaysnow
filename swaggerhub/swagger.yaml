@@ -31,7 +31,7 @@
       "get" : {
         "tags" : [ "car-info" ],
         "summary" : "Find car by VIN",
-        "description" : "Returns a single car",
+        "description" : "Return vehicle data from license plate",
         "operationId" : "getCarByVIN",
         "parameters" : [ {
           "name" : "token",
@@ -148,8 +148,8 @@
     "/v1/fr/" : {
       "get" : {
         "tags" : [ "car-info" ],
-        "summary" : "Find car by plate",
-        "description" : "Returns a single car",
+        "summary" : "Find car by plate , country  (FR)",
+        "description" : "Return vehicle data from license plate",
         "operationId" : "getCarByPlate_fr",
         "parameters" : [ {
           "name" : "token",
@@ -266,8 +266,8 @@
     "/v1/es/" : {
       "get" : {
         "tags" : [ "car-info" ],
-        "summary" : "Find car by plate",
-        "description" : "Returns a single car",
+        "summary" : "Find car by plate  , country  (ES)",
+        "description" : "Return vehicle data from license plate",
         "operationId" : "getCarByPlate_es",
         "parameters" : [ {
           "name" : "token",
@@ -368,8 +368,8 @@
     "/v1/it/" : {
       "get" : {
         "tags" : [ "car-info" ],
-        "summary" : "Find car by plate",
-        "description" : "Returns a single car",
+        "summary" : "Find car by plate  , country  (IT)",
+        "description" : "Return vehicle data from license plate",
         "operationId" : "getCarByPlate_it",
         "parameters" : [ {
           "name" : "token",
@@ -483,8 +483,8 @@
     "/v1/pt/" : {
       "get" : {
         "tags" : [ "car-info" ],
-        "summary" : "Find car by plate",
-        "description" : "Returns a single car",
+        "summary" : "Find car by plate  , country  (PT)",
+        "description" : "Return vehicle data from license plate",
         "operationId" : "getCarByPlate_pt",
         "parameters" : [ {
           "name" : "token",
